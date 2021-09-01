@@ -1,7 +1,7 @@
 const $result = document.querySelector('#result');
 const inputForm = document.querySelector('#inputForm');
 const inputNums = document.querySelector('#inputNums');
-const reBtn = document.querySelector('#restart');
+const reBtn = document.querySelector('#reStart');
 
 let shuffle=[];
 let winBalls;
