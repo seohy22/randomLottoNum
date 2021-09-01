@@ -35,16 +35,16 @@ function colorize(number,$target) {
 }
 
 const showBall = (number,$parent) => {
-    const dl = document.createElement('dl');
+    const ul = document.createElement('ul');
     for(let i=0; i<6; i++){
-        const $ball = document.createElement('div');
+        const $ball = document.createElement('li');
         $ball.className = 'ball';
-        dl.className ='row';
+        ul.className ='row';
         colorize(number[i],$ball);
         $ball.textContent = number[i];
-        dl.appendChild($ball);
+        ul.appendChild($ball);
     }
-    $parent.appendChild(dl);
+    $parent.appendChild(ul);
 };
 
 let checkNum = inputValue => {
@@ -75,7 +75,6 @@ inputForm.addEventListener('submit',(event) => {
         random();
         showBall(winBalls,$result);
     }
-
     inputFrom.remove();
     explain.innerHTML="번호 생성 완료!";
     reBtn.style.display = 'inline';
