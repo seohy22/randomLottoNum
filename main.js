@@ -48,6 +48,12 @@ const showBall = (number,$parent) => {
 };
 
 let checkNum = inputValue => {
+    if(inputValue.length <1){
+        return alert("숫자를 입력해주세요");
+    }
+    if(inputValue == "0"){
+        return alert("0은 입력할 수 없습니다");
+    }
     if(!Number(inputValue) || inputValue.includes(' ') || inputValue.includes('.')){
         return alert("숫자만 입력해주세요");
     }
