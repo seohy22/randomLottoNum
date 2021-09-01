@@ -57,7 +57,7 @@ dl:last-child {
     padding-bottom: 10px;
 }
 
-#restart {
+#reStart {
     width:80%;
     height:40px;
     background: none;
@@ -65,7 +65,7 @@ dl:last-child {
     border-radius: 10px;
     display: none;
 }
-#restart:hover {
+#reStart:hover {
     background: steelblue;
     color:white;
 }
